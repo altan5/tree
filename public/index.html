@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tree builder</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Tree builder</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div id="content">
+					<div id="treeview" class="treeview">
+						<button type="button" class="btn btn-primary d-none" onclick="createRootApi();" id="create_root_btn">Create root element</button>
+						<ul id="tree_ul_element_0"></ul>
+					</div>
+                </div>
+            </div>
+  <!-- The Modal -->
+  <div class="modal fade" id="deleteModal" data-bs-backdrop="static">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+  
+		<!-- Modal Header -->
+		<div class="modal-header">
+		  <h4 class="modal-title">Delete confirmation</h4>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+		</div>
+  
+		<!-- Modal body -->
+		<div class="modal-body">
+		  This very dangerous, you shouldn`t do it! Are you really really sure?
+		</div>
+  
+		<!-- Modal footer -->
+		<div class="modal-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div id="countdown" class="countdown">0</div>
+					</div>
+					<div class="col-6">
+						<div class="float-end">
+							<button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="deleteRoot();">Yes I am</button>
+							<button type="button" class="btn btn-light" data-bs-dismiss="modal">No</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  
+	  </div>
+	</div>
+  </div>
+
+    <!-- The Modal -->
+	<div class="modal fade" id="renameModal" data-bs-backdrop="static">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+	  
+			<!-- Modal Header -->
+			<div class="modal-header">
+			  <h4 class="modal-title">Rename item</h4>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+			</div>
+	  
+			<!-- Modal body -->
+			<div class="modal-body">
+				<input type="text" id="new_item_name" />
+				<input type="hidden" id="rename_item_id" />
+			</div>
+	  
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="saveNodeClicked();">Rename</button>
+				<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+			</div>
+	  
+		  </div>
+		</div>
+	  </div>
+	
+</main>
+        <footer>
+            <div class="container">
+                that's all
+            </div>
+        </footer>
+    </body>
+</html>

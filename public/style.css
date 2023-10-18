@@ -1,0 +1,13 @@
+.pointer {
+	cursor: pointer;
+}
+
+.countdown {
+	font-size: larger;
+	color: red;
+}
+
+ul {
+	list-style: none;
+}
+

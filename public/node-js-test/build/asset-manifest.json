@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/projects/tree/public/node-js-test/build/static/css/main.61c11d94.css",
+    "main.js": "/projects/tree/public/node-js-test/build/static/js/main.759a2e8a.js",
+    "index.html": "/projects/tree/public/node-js-test/build/index.html",
+    "main.61c11d94.css.map": "/projects/tree/public/node-js-test/build/static/css/main.61c11d94.css.map",
+    "main.759a2e8a.js.map": "/projects/tree/public/node-js-test/build/static/js/main.759a2e8a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61c11d94.css",
+    "static/js/main.759a2e8a.js"
+  ]
+}
