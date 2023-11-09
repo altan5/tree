@@ -1,6 +1,6 @@
 # Simple tree builder
-
-Database structure:
+Task description in docx file.
+### Database structure:
 ```sql
 CREATE TABLE `tree` (
   `id` int NOT NULL,
