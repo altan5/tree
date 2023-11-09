@@ -1,4 +1,4 @@
-let api_path = "/tree/api/tree/";
+let api_path = "/projects/tree/public/api/tree/";
 let deleteModal = null;
 let renameModal = null;
 let countdown = null;
